@@ -8,15 +8,173 @@
 
     <TextView
         android:id="@+id/text_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="431dp"
+        android:layout_height="743dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:background="@drawable/backprofile"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/txtAgregarPaciente"
+        android:layout_width="207dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="21dp"
+        android:text="Agregar Paciente"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNombres"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="6dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Nombres"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtApellidos"
+        app:layout_constraintEnd_toEndOf="@+id/txtApellidos"
+        app:layout_constraintStart_toStartOf="@+id/txtApellidos"
+        app:layout_constraintTop_toBottomOf="@+id/txtAgregarPaciente" />
+
+    <EditText
+        android:id="@+id/txtApellidos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Apellidos"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEdad"
+        app:layout_constraintEnd_toEndOf="@+id/txtAgregarPaciente"
+        app:layout_constraintStart_toStartOf="@+id/txtEdad"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombres" />
+
+    <EditText
+        android:id="@+id/txtEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Edad"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtEnfermedad"
+        app:layout_constraintEnd_toEndOf="@+id/txtNumdeCama"
+        app:layout_constraintStart_toStartOf="@+id/txtNumdeCama"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellidos" />
+
+    <EditText
+        android:id="@+id/txtEnfermedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Enfermedad"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNumdeHabitacion"
+        app:layout_constraintStart_toStartOf="@+id/txtEdad"
+        app:layout_constraintTop_toBottomOf="@+id/txtEdad" />
+
+    <EditText
+        android:id="@+id/txtNumdeHabitacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Número de habitación"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNumdeCama"
+        app:layout_constraintStart_toStartOf="@+id/txtEnfermedad"
+        app:layout_constraintTop_toBottomOf="@+id/txtEnfermedad" />
+
+    <EditText
+        android:id="@+id/txtNumdeCama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Número de Cama"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMedicamentosAsignados"
+        app:layout_constraintStart_toStartOf="@+id/txtMedicamentosAsignados"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumdeHabitacion" />
+
+    <EditText
+        android:id="@+id/txtMedicamentosAsignados"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Medicamentos Asignados"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtFechadeIngreso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumdeCama" />
+
+    <EditText
+        android:id="@+id/txtFechadeIngreso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Fecha de Ingreso"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtHoraAplicacion"
+        app:layout_constraintStart_toStartOf="@+id/txtMedicamentosAsignados"
+        app:layout_constraintTop_toBottomOf="@+id/txtMedicamentosAsignados" />
+
+    <EditText
+        android:id="@+id/txtHoraAplicacion"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="22dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Hora de Aplicación de los medicamentos"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnGuardarCambios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFechadeIngreso" />
+
+    <Button
+        android:id="@+id/btnGuardarCambios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="90dp"
+        android:backgroundTint="#4FB5B5"
+        android:text="Guardar Cambios"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtHoraAplicacion"
+        app:layout_constraintTop_toBottomOf="@+id/txtHoraAplicacion" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
