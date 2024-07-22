@@ -20,6 +20,6 @@
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="128dp"
         android:layout_height="129dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="118dp" />
+        tools:layout_editor_absoluteX="27dp"
+        tools:layout_editor_absoluteY="151dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
