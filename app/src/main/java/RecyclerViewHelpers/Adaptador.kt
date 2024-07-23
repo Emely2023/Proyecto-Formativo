@@ -23,8 +23,19 @@ class Adaptador(private var Datos: List<tbPacientes>) : RecyclerView.Adapter<Vie
     override fun getItemCount() = Datos.size
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val producto = Datos[position]
-        holder.lbNombrePacientes.text = tbPacientes.
+        val pacientes = Datos[position]
+        holder.lbNombrePacientes.text = pacientes.nombre
+        holder.lbApellidoPacientes.text = pacientes.apellido
+        holder.lbEdad.text = pacientes.edad
+        holder.lbEnfermedad.text = pacientes.Enfermedad
+        holder.lbNumHabitacion.text = pacientes.NumHabitacion
+        holder.lbNumCama.text = pacientes.NumCama
+        holder.lbMedicamentosAsignados.text = pacientes.MedicamentosAsignados
+        holder.lbFechaIngreso.text = pacientes.FechaIngreso
+        holder.lbHoradeMedicacion.text = pacientes.HoradeMedicacion
+
     }
+
+
 
 }
