@@ -23,10 +23,11 @@
             android:id="@+id/lbNombrePaciente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
             android:text="Nombre"
             android:textColor="#77000000"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="0dp" />
 
         <TextView
             android:id="@+id/lbApellidoPaciente"
@@ -38,16 +39,16 @@
             android:textColor="#77000000"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.472"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="0dp" />
+            tools:layout_editor_absoluteY="28dp" />
 
         <TextView
             android:id="@+id/lbEdadPaciente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="60dp"
             android:text="Edad"
             android:textColor="#C9090909"
             android:textSize="14sp"
@@ -58,12 +59,12 @@
             android:id="@+id/lbEnfermedad"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="132dp"
+            android:layout_marginStart="224dp"
             android:text="Enfermedad"
             android:textColor="#C9090909"
             android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="56dp" />
+            tools:layout_editor_absoluteY="28dp" />
 
         <TextView
             android:id="@+id/lbNumerodeHabitacion"
@@ -72,8 +73,8 @@
             android:text="Numero de Habitacion"
             android:textColor="#C9090909"
             android:textSize="14sp"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="135dp" />
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="136dp" />
 
         <TextView
             android:id="@+id/lbNumerodeCama"
@@ -86,45 +87,43 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="97dp" />
 
+
         <TextView
             android:id="@+id/lbMedicamentosAsignados"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="4dp"
             android:text="Medicamentos Asignados"
             android:textColor="#C9090909"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/btnEditCliente"
             app:layout_constraintHorizontal_bias="0.018"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/lbFechaIngreso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="12dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="32dp"
             android:text="Fecha de Ingreso"
             android:textAlignment="textStart"
             android:textColor="#C9090909"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"/>
-
+            tools:layout_editor_absoluteY="75dp" />
 
         <TextView
             android:id="@+id/lbHoradeMedicacion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="232dp"
+            android:layout_marginEnd="212dp"
             android:text="Hora de Medicacion"
             android:textAlignment="textStart"
             android:textColor="#C9090909"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="169dp" />
+            tools:layout_editor_absoluteY="176dp" />
 
         <ImageView
             android:id="@+id/btnEditPaciente"
@@ -143,7 +142,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/btnEditCliente"
             app:srcCompat="@drawable/imgborrar" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
