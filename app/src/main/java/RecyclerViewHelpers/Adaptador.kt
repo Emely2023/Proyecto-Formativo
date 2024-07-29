@@ -30,6 +30,13 @@ class Adaptador(private var Datos: List<tbPacientes>) : RecyclerView.Adapter<Vie
         TODO("Not yet implemented")
     }
 
+    fun UpdateList(newList: List<tbPacientes>)
+    {
+        Datos = newList
+        notifyDataSetChanged()
+    }
+
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val pacientes = Datos[position]
         holder.lbNombrePacientes.text = pacientes.nombre
@@ -65,11 +72,6 @@ class Adaptador(private var Datos: List<tbPacientes>) : RecyclerView.Adapter<Vie
             notifyDataSetChanged()
         }
 
-        fun UpdateList(newList: List<tbPacientes>)
-        {
-            Datos = newList
-            notifyDataSetChanged()
-        }
 
         fun EditData(
             Nombre: String,

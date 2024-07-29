@@ -7,14 +7,11 @@
     android:layout_height="match_parent"
     android:paddingTop="?attr/actionBarSize">
 
-<<<<<<< HEAD
-=======
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absoluteY="56dp"/>
 
->>>>>>> f5e5dd32088618729806c665180ff678c19c6d34
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/nav_view"
         android:layout_width="0dp"

@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/backprofile">
 
-<<<<<<< HEAD
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -48,7 +47,7 @@
             app:layout_constraintStart_toStartOf="@+id/txtaddNombredelPaciente"
             app:layout_constraintTop_toBottomOf="@+id/txtaddNombredelPaciente" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-=======
+
     <TextView
         android:id="@+id/text_home"
         android:layout_width="431dp"
@@ -85,8 +84,8 @@
         android:layout_height="0dp"
         android:layout_marginBottom="6dp"
         android:ems="10"
+        android:hint="Nombres"
         android:inputType="text"
-        android:text="Nombres"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/txtApellidoPaciente"
         app:layout_constraintEnd_toEndOf="@+id/txtApellidoPaciente"
@@ -100,8 +99,8 @@
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="11dp"
         android:ems="10"
+        android:hint="Apellidos"
         android:inputType="text"
-        android:text="Apellidos"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/txtEdad"
         app:layout_constraintEnd_toEndOf="@+id/txtAgregarPaciente"
@@ -114,8 +113,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="13dp"
         android:ems="10"
+        android:hint="Edad"
         android:inputType="text"
-        android:text="Edad"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/txtEnfermedad"
         app:layout_constraintEnd_toEndOf="@+id/txtNumdeCama"
@@ -128,8 +127,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="13dp"
         android:ems="10"
+        android:hint="Enfermedad"
         android:inputType="text"
-        android:text="Enfermedad"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/txtNumdeHabitacion"
         app:layout_constraintStart_toStartOf="@+id/txtEdad"
@@ -141,8 +140,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="19dp"
         android:ems="10"
+        android:hint="Número de habitación"
         android:inputType="text"
-        android:text="Número de habitación"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/txtNumdeCama"
         app:layout_constraintStart_toStartOf="@+id/txtEnfermedad"
@@ -154,8 +153,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="9dp"
         android:ems="10"
+        android:hint="Número de Cama"
         android:inputType="text"
-        android:text="Número de Cama"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/txtMedicamentosAsignados"
         app:layout_constraintStart_toStartOf="@+id/txtMedicamentosAsignados"
@@ -169,8 +168,8 @@
         android:layout_marginEnd="56dp"
         android:layout_marginBottom="10dp"
         android:ems="10"
+        android:hint="Medicamentos Asignados"
         android:inputType="text"
-        android:text="Medicamentos Asignados"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/txtFechadeIngreso"
         app:layout_constraintEnd_toEndOf="parent"
@@ -184,8 +183,8 @@
         android:layout_marginStart="1dp"
         android:layout_marginBottom="11dp"
         android:ems="10"
+        android:hint="Fecha de Ingreso"
         android:inputType="text"
-        android:text="Fecha de Ingreso"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/txtHoraAplicacion"
         app:layout_constraintStart_toStartOf="@+id/txtMedicamentosAsignados"
@@ -199,8 +198,8 @@
         android:layout_marginEnd="70dp"
         android:layout_marginBottom="22dp"
         android:ems="10"
+        android:hint="Hora de Aplicación de los medicamentos"
         android:inputType="text"
-        android:text="Hora de Aplicación de los medicamentos"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/btnGuardarCambios"
         app:layout_constraintEnd_toEndOf="parent"
@@ -220,5 +219,4 @@
         app:layout_constraintEnd_toEndOf="@+id/txtHoraAplicacion"
         app:layout_constraintTop_toBottomOf="@+id/txtHoraAplicacion" />
 
->>>>>>> f5e5dd32088618729806c665180ff678c19c6d34
 </androidx.constraintlayout.widget.ConstraintLayout>
